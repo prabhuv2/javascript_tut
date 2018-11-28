@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>js copy</title>
+    </head>
+    <body>
+        <h1>Copy content to clipboard</h1>
+        <textarea id="id">
+            <a href="https://google.com">
+            <img src = "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" height="100" width="100">
+            </a>
+        </textarea>
+        <button onclick='copy()'>Copy</button>
+        <script>
+            function copy(){
+                document.getElementById('id').select();
+                document.execCommand('copy');
+                alert('copied');
+            }
+        </script>
+    </body>
+</html>
+    
+   
